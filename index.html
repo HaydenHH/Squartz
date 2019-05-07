@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #threeScene{
+            position: fixed;
+            z-index: -1;
+            left:15%;
+            top:15%;
+            width: 70vw;
+            height: 70vh;
+        }
+        #threeScene canvas{
+            /*border: 5px solid #eeeeee;*/
+        }
+        #mainTitle{
+            position: absolute;
+            border: 4px solid black;
+            width: 20%;
+            padding: 10px 30px;
+            text-align: center;
+            top: 20vh;
+            left:40vw;
+        }
+    </style>
+
+    <script src="js/three.js"></script>
+    <script src="js/EffectComposer.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/dat.gui.min.js"></script>
+    <script src="js/ConvolutionShader.js"></script>
+    <script src="js/BloomPass.js"></script>
+    <script src="js/RGBShiftShader.js"></script>
+    <script src="js/DotScreenShader.js"></script>
+    <script src="js/DigitalGlitch.js"></script>
+    <script src="js/GlitchPass.js"></script>
+    <script src="js/FilmPass.js"></script>
+    <script src="js/FilmShader.js"></script>
+    <script src="js/CopyShader.js"></script>
+
+
+    <script src="js/RenderPass.js"></script>
+    <script src="js/MaskPass.js"></script>
+    <script src="js/ShaderPass.js"></script>
+
+    <script src="js/lotus.js"></script>
+
+
+</head>
+<body onload="myObject()">
+    <div id="threeScene"></div>
+    <!-- <h1 id="mainTitle">Contact & Connect</h1> -->
+</body>
+</html>
