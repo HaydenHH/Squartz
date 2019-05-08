@@ -69,7 +69,7 @@ function myObject(){
     add2Gui('camera',camPos,-300,300)
     add2Gui('light',lightPos,-100,100)
     add2Gui('lookAt',camTarget,-500,500)
-    add2Gui('fog',fogVisibility,0.1,1000)
+    // add2Gui('fog',fogVisibility,0.1,1000)
     // add2Gui('effectControl',effectControl,0,10)
 
 
