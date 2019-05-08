@@ -66,7 +66,7 @@ function myObject(){
     //     'RGBShift':0.01
     // }
 
-    add2Gui('camera',camPos,-300,300)
+    // add2Gui('camera',camPos,-300,300)
     add2Gui('light',lightPos,-100,100)
     add2Gui('lookAt',camTarget,-500,500)
     // add2Gui('fog',fogVisibility,0.1,1000)
@@ -152,7 +152,7 @@ function myObject(){
             }
         )
 
-    // let control = new THREE.OrbitControls(camera,renderer.domElement)
+    let control = new THREE.OrbitControls(camera,renderer.domElement)
     let ranMap = []
 
 // +++ EFFECT +++
@@ -202,6 +202,8 @@ function myObject(){
 
     let nowTime = 0
     let clitchToggleTime
+    camera.lookAt(...Object.values(camTarget))
+    camera.position.set(...Object.values(camPos))
     function animate(time) {
 
         requestAnimationFrame(animate)
@@ -211,7 +213,7 @@ function myObject(){
         nowTime++
 
 
-        camera.position.set(...Object.values(camPos))
+        // camera.position.set(...Object.values(camPos))
         light.position.set(...Object.values(lightPos))
         camera.lookAt(...Object.values(camTarget))
         // s.fog.far = fogVisibility['value']
